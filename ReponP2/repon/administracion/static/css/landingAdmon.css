@@ -1,0 +1,90 @@
+.tituloLanding{
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+.containerTituloLanding{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerBotonesArriba{
+    width: 80%;
+    height: 240px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerBotonesAbajo{
+    width: 80%;
+    height: 240px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.botonesLanding{
+    width: 28%;
+    height: 90%;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.533);
+    border-radius: 25px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.containerContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+.containerCirculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoContenido{
+    text-align: center;
+    color: #152850;
+    font-size: 20px;
+    width: 45%;
+    margin: 0px;
+    line-height: 18px;
+}
+.iconos{
+    width: 80px;
+}
+#imgDiferente{
+    width: 110px;
+}
+.circulo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1C274C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+#flecha{
+    color: #ffffff;
+}
+#panelAdmin{
+    background-color: #6E6E6E;
+}
+.alert{
+    margin: 0px auto !important;
+    margin-bottom: 3px !important;
+    padding: 3px !important;
+    max-width: 30% !important;
+    text-align: center;
+    font-size: 14px;
+}

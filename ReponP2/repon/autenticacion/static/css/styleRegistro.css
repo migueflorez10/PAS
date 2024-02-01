@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat:wght@600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,#1C1550,#475678,#9198B2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    height: 60%;
+}
+.containerBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fondoBlanco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.333); 
+}
+.contenido{
+    width: 98%;
+    height: 98%;
+    border: 5px solid #152850;
+    border-radius: 20px;
+}
+.flexDiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.containerInput>input{
+    border:2px solid #000000;
+    border-radius: 6px;
+    font-size: 16px; 
+}
+.containerInput>label{
+    width: 100%; 
+    font-size: 14px;
+}
+/*-------------------------------------------------------------------------------------*/
+#tituloRegistro{
+    text-align: center;
+    color: #6E6E6E;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 26px;
+
+}
+#btnCrearCuenta{
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid #5E5BFF;
+    border-radius: 5px;
+    background-color: #344172;
+    color: #ffffff;
+    margin-top: 0px;
+}
+/*-------------------------------------------------------------------------------------*/
+.navRegistro{
+    display: flex;
+    height: 18%;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navRegistro>img{
+   max-width: 350px;
+   margin-left: -25px;
+}
+#btnVolverInicio{
+    background-color: #ED1A28;
+    border-color: #ED1A28;
+}
+.botones>a{
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #5E5BFF;
+    border-radius: 5px;
+    background-color: #344172;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*-------------------------------------------------------------------------------------*/
+.alert{
+    margin: 0px auto !important;
+    margin-bottom: 3px !important;
+    padding: 3px !important;
+    max-width: 80% !important;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .fondoBlanco{
+        width: 80%;
+        height: 50%;
+        margin-bottom: 200px;
+    }
+    #btnCrearCuenta{
+        font-size: 16px;
+        padding: 6px;
+    }
+    .navRegistro>img{
+        max-width: 200px;
+    }
+    .navRegistro>a{
+        font-size: 16px;
+        padding: 6px;
+    }
+  }
+@media (max-width: 1500px) {
+    .fondoBlanco{
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    #btnCrearCuenta{
+        font-size: 16px;
+        padding: 6px;
+    }
+
+}
+@media (min-width: 1000px) {
+    .containerInput>label{
+        font-size: 14px;
+    }
+    .containerInput>input{
+        width: 260px;
+        height: 28px;
+    }
+}

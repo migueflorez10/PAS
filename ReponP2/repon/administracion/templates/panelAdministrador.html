@@ -1,0 +1,58 @@
+{% extends 'autenticacion/plantillaCuadros.html' %}
+{% load static %}
+{% block title %}Panel Administrador{% endblock %}
+{%block head%}
+<link rel="stylesheet" href="{% static 'css/panelAdministrador.css' %}">
+<script src="https://kit.fontawesome.com/4efaf993e1.js" crossorigin="anonymous"></script>
+{%endblock%}
+
+{% block content %}
+<section class="tituloContainer">
+    <h1 class="tituloPanel">Panel administrador</h1>
+</section>
+<section class="containerBotones">
+    <a class="botonesLanding" href="{% url 'comparacionProyectos' %}">
+        <div class="containerContenido">
+            <h3 class="subtitulos">Comparacion proyectos</h3>
+        </div>
+        <div class="containerCirculo">
+            <div class="circulo">
+                <i class="fas fa-chevron-right" id="flecha"></i>
+            </div>
+        </div>
+    </a>
+    <a class="botonesLanding" href="{% url 'comparacionMedio' %}">
+        <div class="containerContenido">
+            <h3 class="subtitulos">Comparacion con el medio</h3>
+        </div>
+        <div class="containerCirculo">
+            <div class="circulo">
+                <i class="fas fa-chevron-right" id="flecha"></i>
+            </div>
+        </div>
+    </a>
+    <a class="botonesLanding" href="{% url 'subirArchivoEntreno' %}">
+        <div class="containerContenido">
+            <h3 class="subtitulos">Ingreso categorización</h3>
+        </div>
+        <div class="containerCirculo">
+            <div class="circulo">
+                <i class="fas fa-chevron-right" id="flecha"></i>
+            </div>
+        </div>
+    </a>
+    <a class="botonesLanding" href="{% url 'consultaInsumos' %}">
+        <div class="containerContenido">
+            <h3 class="subtitulos">Disponibilidad de insumos</h3>
+        </div>
+        <div class="containerCirculo">
+            <div class="circulo">
+                <i class="fas fa-chevron-right" id="flecha"></i>
+            </div>
+        </div>
+    </a>
+    <div class="botones">
+        <a class="volver" href="{% url 'landingAdmon' %}">Volver</a>
+    </div>
+</section>
+{% endblock %}
